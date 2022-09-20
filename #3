@@ -1,0 +1,25 @@
+# When you have wifi but cannot access to the internet
+
+Objective:
+Trash Existing Wi-Fi Preferences in OS X to Start Fresh.
+
+Environment:
+Mac, Apple, OS X, Wi-Fi, wireless
+
+Procedure:
+Create a new folder on your Desktop called ‘Wi-Fi prefs backup’ or something obvious.
+Turn off Wi-Fi from the menu item in the upper right corner of the OS X.
+Go to the Finder (the smiley face icon in the Dock), and press Command+Shift+G to bring up the Go To Folder command, choose the following path exactly: /Library/Preferences/SystemConfiguration/
+Press Return to go to that folder, then locate and select the following files:
+com.apple.airport.preferences.plist 
+com.apple.network.identification.plist
+com.apple.wifi.message-tracer.plist
+NetworkInterfaces.plist
+preferences.plist
+Move all of these files into the folder you created in Step 1 on the desktop (you can also delete them if you’re confident and have made a backup).
+Reboot the Mac.
+Turn on Wi-Fi from the wireless network menu again in the upper right corner of OS X.
+If your Wi-Fi works now, great, but for most users, you’re not quite finished yet! Now you need to create a new custom network location.
+
+Reference: 
+https://teamdynamix.umich.edu/TDClient/47/LSAPortal/KB/ArticleDet?ID=1830
